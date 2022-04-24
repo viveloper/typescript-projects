@@ -2,9 +2,10 @@
   "compilerOptions": {
     "allowJs": true,
     "target": "ES5",
-    "outDir": "./built",
+    "outDir": "./dist",
     "moduleResolution": "Node",
     "lib": ["ES2015", "DOM", "DOM.Iterable"]
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
