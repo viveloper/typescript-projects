@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Chart } from 'chart.js';
+import Char from 'chart.js';
 
 // utils
 function $(selector: string) {
