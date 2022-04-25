@@ -1,5 +1,6 @@
 import axios from 'axios';
-import Char from 'chart.js';
+import Chart from 'chart.js';
+import './index.css';
 
 // utils
 function $(selector: string) {
@@ -179,9 +180,9 @@ async function setupData() {
 }
 
 function renderChart(data: any, labels: any) {
-  const ctx = $('#lineChart').getContext('2d');
+  const lineChart = $('#lineChart') as HTMLCanvasElement;
+  const ctx = lineChart.getContext('2d');
   Chart.defaults.color = '#f5eaea';
-  Chart.defaults.font.family = 'Exo 2';
   new Chart(ctx, {
     type: 'line',
     data: {

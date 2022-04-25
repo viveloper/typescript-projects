@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "target": "ES5",
-    "outDir": "./dist",
-    "moduleResolution": "Node",
-    "lib": ["ES2015", "DOM", "DOM.Iterable"],
+    "outDir": "./dist/",
+    "sourceMap": true,
     "noImplicitAny": true,
-    "esModuleInterop": true,
-    "typeRoots": ["./node_modules/@types", "types"]
-  },
-  "include": ["./src/**/*"],
-  "exclude": ["node_modules", "dist"]
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  }
 }
