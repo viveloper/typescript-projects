@@ -1,0 +1,19 @@
+{
+  "extends": ["plugin:prettier/recommended"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "jest": true
+  },
+  "plugins": ["react", "import", "react-hooks"]
+}
