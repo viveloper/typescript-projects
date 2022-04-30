@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './App';
 import './index.css';
-
-function App() {
-  return <div>Hello</div>;
-}
 
 const rootElement = document.querySelector('#root');
 if (!rootElement) throw new Error('Failed to find the root element');
